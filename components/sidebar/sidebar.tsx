@@ -11,9 +11,9 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import SubCategoryList from './SubCategoryList'
 
 const subCategories = [
-  { name: 'MY TEST', href: '/' },
-  { name: 'PRATICE', href: '#' },
-  { name: 'TEST INFO', href: '#' },
+  { name: 'MY TEST', href: '/home' },
+  { name: 'PRATICE', href: '/post' },
+  { name: 'TEST INFO', href: '/testInfor' },
   { name: 'INSTITUTIONS', href: '##' },
 ]
 

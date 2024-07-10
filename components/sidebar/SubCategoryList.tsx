@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import { useRouter } from 'next/navigation'
 
 interface subCategories {
   name: string;
@@ -12,9 +13,10 @@ interface SubCategoryListProps {
 
 const SubCategoryList: React.FC<SubCategoryListProps> = ({ subCategories }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(0); 
-
+  const router = useRouter()
   const handleClick = (index: number) => {
     setActiveIndex(index);
+    router.push(subCategories[index].href)
   };
 
   return (
@@ -30,7 +32,7 @@ const SubCategoryList: React.FC<SubCategoryListProps> = ({ subCategories }) => {
           key={category.name}
           onClick={() => handleClick(index)}
         >
-          <Link href={category.href}>{category.name}</Link>
+          <p>{category.name}</p>
         </li>
       ))}
     </ul>
