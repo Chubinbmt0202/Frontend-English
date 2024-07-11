@@ -1,9 +1,13 @@
-"use client";
+"use client"
+import React, { useState } from 'react';
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
+
   return (
-    <div className="home h-[5000px]">
-      <h1>Welcome to the home page</h1>
+    <div className=" pt-7">
+      <div>content</div>
     </div>
   );
-}
+};
+
+export default HomePage;
