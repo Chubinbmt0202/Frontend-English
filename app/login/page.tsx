@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function LoginPage() {
   return (
     <>
@@ -72,6 +73,27 @@ export default function LoginPage() {
               </button>
             </div>
           </form>
+
+          <div className=" flex justify-between items-center">
+            <hr className=" my-5 w-2/5" />
+            <p className="text-xs">Hoặc</p>
+            <hr className=" my-5 w-2/5" />
+          </div>
+
+          <div className=" flex gap-1">
+              <button
+                type="submit"
+                className="flex w-full justify-center rounded-md bg-slate-300 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Facebook
+              </button>
+              <button
+                type="submit"
+                className="flex w-full justify-center rounded-md bg-slate-300 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Google
+              </button>
+            </div>
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Khi đăng ký trên Fluent Futures, bạn đã đồng ý với Các chính sách và
